@@ -23,8 +23,8 @@ import Platform.Posix
 -- the tests;
 -- they only get here to be checked by the typechecker,
 -- but we do not want GHC to compile the empty files generated
-import Test.Parity
-import Test.Haskell.Parity
+import Test.ExampleTest
+import Test.Haskell.ExampleTest
 
 -- And now, we also copy them into the Haskell source;
 -- this way, we can compile everything by compiling All.hs.
@@ -39,5 +39,5 @@ import Tool.ErasureProduct
 -- import Tool.PropositionalEquality    -- this would be empty
 import Platform
 -- This cannot be put here; CMake's GHC would search for QuickCheck.
--- import Test.Haskell.Parser
+-- import Test.Haskell.ExampleTest
 #-}

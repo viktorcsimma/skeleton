@@ -83,8 +83,8 @@ test-suite AcornQuickCheck
   type:                exitcode-stdio-1.0
   hs-source-dirs:      src
   main-is:             TestMain.hs
-  autogen-modules:     Test.Haskell.Parity
-  other-modules:       Test.Haskell.Parity
+  autogen-modules:     Test.Haskell.ExampleTest
+  other-modules:       Test.Haskell.ExampleTest
   build-depends:       base     >= 4.13    && < 4.20,
                        containers,
                        text,

@@ -1,0 +1,14 @@
+@startuml runtime
+
+class AsyncHandler {
+
+}
+
+class Platform {
+    newtype Interruptible a = Interruptible (runInterruptible :: Int -> IO (Int, a))
+    toAsync :: (a -> IO b) -> IO b -> (Int -> a -> IO b)
+    runInterruptibly :: Int -> IO b -> IO b -> Interruptible b
+
+}
+
+@enduml
